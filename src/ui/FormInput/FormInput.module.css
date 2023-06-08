@@ -1,0 +1,15 @@
+.inputWrapper {
+  height: 5vh;
+  text-align: left;
+  width: 30vw;
+  display: flex;
+  margin-bottom: 2vh;
+}
+.inputWrapper label {
+  width: 10vw;
+  min-width: 7vw;
+  font-size: 1.2vw;
+}
+.inputWrapper input {
+  width: 30vw;
+}
