@@ -1,22 +1,36 @@
-.form {
-  width: 28vw;
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 50vw;
+  height: max-content;
   background-color: #12192c;
+  box-shadow: 2px 2px 2px 2px rgba(3, 2, 1, 0.1);
+  border-radius: 5px;
+}
+
+.form {
+  width: 25vw;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   padding-bottom: 5vh;
-  border-radius: 5px;
   margin: 1vw;
   font-family: "Poppins";
   padding-top: 1vh;
-  box-shadow: 2px 2px 2px 2px rgba(3, 2, 1, 0.1);
-  transition: ease 0.5s;
+}
+
+form h1 {
+  color: white;
 }
 
 .form button {
+  margin-top: 3vh;
   font-weight: bolder;
-  width: 85%;
+  width: 22vw;
   height: 3vh;
   padding: 3vh;
   display: flex;
@@ -37,33 +51,28 @@
   background-color: #ccc;
   color: rgb(83, 80, 80);
 }
-form h1 {
-  color: white;
-}
 
-.form a {
+.formBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 25vw;
+  flex-direction: column;
+}
+.formBanner i {
+  font-size: 8vw;
+}
+.formBanner a {
   color: #00c9a7;
   text-decoration: none;
 }
-.form span {
+.formBanner span {
   color: white;
 }
-.form label {
-  font-size: 10px;
-  color: rgb(210, 210, 210);
-  width: 21.5vw;
-  font-style: italic;
-  font-weight: bold;
-  margin-top: 5px;
-}
-
-.forgotPassword {
-  color: #00c9a7;
-  width: 85%;
-  text-align: left;
-  margin: 0;
-  padding: 0;
-  padding-top: 0;
+.formBanner h1 {
+  font-family: "Poppins";
+  color: white;
 }
 
 .error {

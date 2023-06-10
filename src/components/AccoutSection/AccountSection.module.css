@@ -1,0 +1,53 @@
+.accountSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: max-content;
+  margin-right: 10px;
+  gap: 3vh;
+}
+.accountSection i {
+  font-size: 3vh;
+  cursor: pointer;
+  color: white;
+  transition: ease 0.5s;
+}
+.accountSection i:hover {
+  color: #00c9a7;
+  /* font-size: 3.4vh; */
+}
+
+.accountSection section {
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  padding: 1vh;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.accountSection section i:hover {
+  color: white;
+}
+.accountSection section label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.profile {
+  height: 6vh;
+  width: 6vh;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00c9a7;
+  border-style: solid;
+  border-color: #00c9a7;
+  border-width: 0.6px;
+  cursor: pointer;
+  user-select: none;
+}
