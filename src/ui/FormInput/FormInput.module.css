@@ -26,6 +26,22 @@
   outline: none;
 }
 
+/* For WebKit browsers */
+.inputWrapper input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+}
+
+/* For Firefox */
+.inputWrapper input[type="date"]::-moz-calendar-picker-indicator {
+  filter: invert(100%);
+}
+
+/* For Edge and IE */
+.inputWrapper input[type="date"]::-ms-clear {
+  color: #ffffff;
+  transform: scale(1.5);
+}
+
 i {
   color: white;
   font-size: 2.3 vh;

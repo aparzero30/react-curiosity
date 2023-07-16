@@ -30,15 +30,8 @@ const RegisterForm = () => {
     ) {
       setFormIsInvalid(true);
     }
-    if (
-      emailIsValid &&
-      passwordIsValid &&
-      secPasswordIsValid &&
-      formIsInvalid &&
-      snameIsValid
-    ) {
-      setFormIsInvalid(false);
-    }
+
+    setFormIsInvalid(false);
   };
 
   const validateEmail = (value) => {
@@ -92,9 +85,6 @@ const RegisterForm = () => {
         setFormIsInvalid(false);
       }
     }
-    console.log("password: " + password);
-    console.log("sec-password: " + value);
-    console.log(secPasswordIsValid);
   };
 
   const checkNameIsValid = (value) => {
@@ -205,6 +195,7 @@ const RegisterForm = () => {
           onChange={handleInputEmailChange}
           validity={emailIsValid}
           onBlur={validateForm}
+          required={true}
         />
         <FormInput
           label="Password (atleast 6 Characters)"
@@ -214,6 +205,7 @@ const RegisterForm = () => {
           onChange={handleInputPasswordChange}
           validity={passwordIsValid}
           onBlur={validateForm}
+          required={true}
         />
         <FormInput
           label="Retype Password"
@@ -223,6 +215,7 @@ const RegisterForm = () => {
           onChange={handleInputSecPasswordChange}
           validity={secPasswordIsValid}
           onBlur={validateForm}
+          required={true}
         />
         <FormInput
           label="First Name"
@@ -232,6 +225,7 @@ const RegisterForm = () => {
           onChange={handleInputFnameChange}
           validity={fnameIsValid}
           onBlur={validateForm}
+          required={true}
         />
         <FormInput
           label="Last Name"
@@ -241,6 +235,7 @@ const RegisterForm = () => {
           onChange={handleInputSnameChange}
           validity={snameIsValid}
           onBlur={validateForm}
+          required={true}
         />
         <FormInput
           label="Role"
@@ -249,6 +244,7 @@ const RegisterForm = () => {
           className="fa-solid fa-face-smile"
           onBlur={validateForm}
           validity={true}
+          required={true}
         />
 
         {!isSubmitting && <button disabled={formIsInvalid}>SIGNUP</button>}

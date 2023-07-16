@@ -1,0 +1,48 @@
+.enroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #12192c65;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
+.frm {
+  width: max-content;
+  background-color: #12192c;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+  flex-direction: column;
+  gap: 1vw;
+  z-index: 2; /* Increased z-index to bring the modal above the backdrop */
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frm button {
+  margin-top: 3vh;
+  font-weight: bolder;
+  width: 22vw;
+  height: 3vh;
+  padding: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  background-color: #00c9a7;
+  font-family: "Poppins";
+  font-size: 2vh;
+  color: white;
+}

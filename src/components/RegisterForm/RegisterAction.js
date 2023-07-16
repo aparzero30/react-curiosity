@@ -10,7 +10,6 @@ async function registerAction({ request }) {
     lastName: data.get("userLastName"),
     role: data.get("userRole"),
   };
-  console.log(formData);
 
   let url = "http://localhost:8080/api/v1/auth/register";
 
@@ -36,7 +35,7 @@ async function registerAction({ request }) {
 
   // const responseData = await response.json();
 
-  return redirect("/signup");
+  return redirect("/login");
 }
 
 export default registerAction;

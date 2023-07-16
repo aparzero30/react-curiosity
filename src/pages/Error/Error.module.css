@@ -1,0 +1,11 @@
+.err {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins";
+}
+.err i {
+  color: #12192c;
+  font-size: 10vw;
+}

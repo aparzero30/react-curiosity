@@ -1,0 +1,10 @@
+.half {
+  min-height: 50vh;
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: fixed;
+  top: 10vh;
+  left: 0.5vh;
+}

@@ -89,6 +89,7 @@ const LoginForm = () => {
         onChange={handleInputEmailChange}
         validity={emailIsValid}
         onBlur={validateForm}
+        required={true}
       />
       <FormInput
         label="Password (atleast 6 Characters)"
@@ -98,6 +99,7 @@ const LoginForm = () => {
         onChange={handleInputPasswordChange}
         validity={passwordIsValid}
         onBlur={validateForm}
+        required={true}
       />
       <Link className={classes.forgotPassword}>
         <p>Forgot password?</p>

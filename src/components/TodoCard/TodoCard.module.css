@@ -1,0 +1,36 @@
+.todoCard {
+  display: flex;
+  font-family: "Poppins";
+  flex-direction: column;
+  color: white;
+  background-color: #12192c;
+  justify-content: center;
+  border-radius: 2.5px;
+  padding: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  min-width: 19.5vw;
+  max-width: 20vw;
+  margin-bottom: 3px;
+  margin-right: 3px;
+  direction: ltr;
+  margin-left: 0.3vw;
+}
+.todoCard label {
+  font-size: 10px;
+}
+.todoCard h4 {
+  margin: 0;
+}
+
+.action {
+  margin-top: 2px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.action i {
+  user-select: none;
+  cursor: pointer;
+  font-size: 15px;
+}

@@ -1,6 +1,6 @@
 import { json, redirect } from "react-router-dom";
 
-async function loginAction({ request, params }) {
+async function loginAction({ request }) {
   const data = await request.formData();
   const method = request.method;
   const formData = {
@@ -31,7 +31,7 @@ async function loginAction({ request, params }) {
   }
 
   const responseData = await response.json();
-  localStorage.setItem("token", responseData.token);
+  localStorage.setItem("JWT-TOKEN", responseData.token);
   return redirect("/main");
 }
 

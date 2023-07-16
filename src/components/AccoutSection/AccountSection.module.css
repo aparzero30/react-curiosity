@@ -7,7 +7,12 @@
   width: max-content;
   margin-right: 10px;
   gap: 3vh;
+  cursor: pointer;
 }
+.accountSection a {
+  text-decoration: none;
+}
+
 .accountSection i {
   font-size: 3vh;
   cursor: pointer;

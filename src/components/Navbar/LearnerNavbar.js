@@ -1,7 +1,7 @@
 import classes from "./Navbar.module.css";
 import AccountSection from "../AccoutSection/AccountSection";
 
-const Navbar = (props) => {
+const LearnerNavbar = (props) => {
   return (
     <div className={classes.navbar}>
       <label>Curiosity</label>
@@ -9,4 +9,4 @@ const Navbar = (props) => {
     </div>
   );
 };
-export default Navbar;
+export default LearnerNavbar;

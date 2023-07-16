@@ -1,0 +1,31 @@
+.todosWrapper {
+  min-width: 20vw;
+  max-width: 24vw;
+  /* max-height: 70vh; */
+  /* max-height: 30vh; */
+  display: flex;
+  align-items: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 1vh;
+  overflow-y: auto;
+  direction: rtl;
+  transition: ease all 0.4s;
+}
+
+.todosWrapper::-webkit-scrollbar {
+  width: 0.1vw; /* width of the entire scrollbar */
+}
+
+.todosWrapper::-webkit-scrollbar-thumb {
+  background-color: white; /* color of the scroll thumb */
+  /* border-radius: 10px;  */
+}
+
+.todosWrapper::-webkit-scrollbar-track {
+  background-color: #2f3136; /* color of the scroll track */
+}
+
+.todosWrapper::-webkit-scrollbar-button {
+  display: none; /* hide the scroll buttons */
+}

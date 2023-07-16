@@ -1,0 +1,24 @@
+.todoWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.todoWrapper h1,
+h3 {
+  margin: 0;
+  text-align: center;
+  color: #12192c;
+  width: 100%;
+}
+
+.todoWrapper h3 {
+  text-align: left;
+  margin-left: 1vh;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

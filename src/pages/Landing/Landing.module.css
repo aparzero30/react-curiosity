@@ -1,0 +1,51 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw;
+  flex-direction: column;
+  font-family: "Poppins";
+}
+
+.box h1 {
+  margin: 0;
+}
+.box img {
+  height: 20vw;
+  width: 20vw;
+}
+.btnWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1vh;
+}
+.btnWrapper button {
+  font-weight: bolder;
+  min-width: 10vw;
+  width: 85%;
+  height: 3vh;
+  padding: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  background-color: black;
+  font-family: "Poppins";
+  font-size: 2vh;
+
+  border-style: solid;
+  border-color: black;
+  border-width: 0.1px;
+  color: black;
+  background-color: transparent;
+}
+.btnWrapper a {
+  text-decoration: none;
+}
+
+.btnWrapper button:hover {
+  background-color: black;
+  color: white;
+}
